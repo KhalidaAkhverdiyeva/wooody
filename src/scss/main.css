@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Clash Display", sans-serif;
+}
+
+header {
+  margin-bottom: 40px;
+}
+header .main-header {
+  background-color: rgb(246, 243, 237);
+}
+header .main-header .header-container {
+  max-width: 1420px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+header .main-header .header-container .header-container-inner {
+  height: 90px;
+  border-color: rgb(94, 104, 33);
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+header .main-header .header-container .header-container-inner .header-left {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: -10px;
+  flex: 1 1 0%;
+}
+header .main-header .header-container .header-container-inner .header-left .header-nav {
+  padding-inline: 10px;
+  flex: 1 1 auto;
+}
+header .main-header .header-container .header-container-inner .header-left .header-nav ul {
+  color: #333;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  list-style: none;
+  gap: 20px;
+}
+header .main-header .header-container .header-container-inner .header-left .header-nav ul > li:first-child {
+  position: relative;
+}
+header .main-header .header-container .header-container-inner .header-left .header-nav ul > li a {
+  text-decoration: none;
+}
+header .main-header .header-container .header-container-inner .header-left .header-nav ul > li a span {
+  color: #333;
+  height: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header .main-header .header-container .header-container-inner .header-left .header-nav ul > li a i {
+  color: rgba(82, 82, 82, 0.45);
+  font-size: 12px;
+}
+header .main-header .header-container .header-container-inner .header-center {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+header .main-header .header-container .header-container-inner .header-center .logo {
+  padding-inline: 10px;
+}
+header .main-header .header-container .header-container-inner .header-center .logo a {
+  text-decoration: none;
+}
+header .main-header .header-container .header-container-inner .header-center .logo a img {
+  max-width: 220px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+header .main-header .header-container .header-container-inner .header-right {
+  flex: 1 1 0%;
+  justify-content: flex-end;
+  margin-right: -10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+header .main-header .header-container .header-container-inner .header-right > div:first-child {
+  color: #333;
+}
+header .main-header .header-container .header-container-inner .header-right > div:first-child > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  color: #333;
+  line-height: 1;
+  padding-inline: 10px;
+  text-decoration: none;
+}
+header .main-header .header-container .header-container-inner .header-right > div:first-child > a > span:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  height: 40px;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header .main-header .header-container .header-container-inner .header-right > div:nth-child(2) {
+  color: #333;
+}
+header .main-header .header-container .header-container-inner .header-right > div:nth-child(2) > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  color: #333;
+  line-height: 1;
+  padding-inline: 10px;
+  text-decoration: none;
+}
+header .main-header .header-container .header-container-inner .header-right > div:nth-child(2) > a > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  height: 40px;
+  font-size: 16px;
+}
+header .main-header .header-container .header-container-inner .header-right > div:nth-child(3) {
+  color: #333;
+}
+header .main-header .header-container .header-container-inner .header-right > div:nth-child(3) > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 40px;
+  color: #333;
+  line-height: 1;
+  padding-inline: 10px;
+  text-decoration: none;
+}
+header .main-header .header-container .header-container-inner .header-right > div:nth-child(3) > a > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  height: 40px;
+  font-size: 16px;
+}
+header .main-header .header-container .header-container-inner .header-right > div:nth-child(3) > a span {
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header .main-header .header-container .header-container-inner .header-right > div:nth-child(4) {
+  color: #333;
+}
+header .main-header .header-container .header-container-inner .header-right > div:nth-child(4) > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 40px;
+  color: #333;
+  line-height: 1;
+  padding-inline: 10px;
+  text-decoration: none;
+}
+header .main-header .header-container .header-container-inner .header-right > div:nth-child(4) > a > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  height: 40px;
+  font-size: 16px;
+}
+header .main-header .header-container .header-container-inner .header-right > div:nth-child(4) > a span {
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@font-face {
+  font-family: "Clash Display";
+  src: url("./fonts/ClashDisplay-Bold.woff") format("woff"), url("./fonts/ClashDisplay-Bold.woff2") format("woff2"), url("./fonts/ClashDisplay-Extralight.woff") format("woff"), url("./fonts/ClashDisplay-Extralight.woff2") format("woff2"), url("./fonts/ClashDisplay-Light.woff") format("woff"), url("./fonts/ClashDisplay-Light.woff2") format("woff2"), url("./fonts/ClashDisplay-Medium.woff") format("woff"), url("./fonts/ClashDisplay-Medium.woff2") format("woff2"), url("./fonts/ClashDisplay-Regular.woff") format("woff"), url("./fonts/ClashDisplay-Regular.woff2") format("woff2"), url("./fonts/ClashDisplay-Semibold.woff") format("woff"), url("./fonts/ClashDisplay-Semibold.woff2") format("woff2"), url("./fonts/ClashDisplay-Variable.woff") format("woff"), url("./fonts/ClashDisplay-Variable.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}/*# sourceMappingURL=main.css.map */

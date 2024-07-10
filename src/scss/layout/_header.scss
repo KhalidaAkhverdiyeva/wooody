@@ -1,0 +1,214 @@
+@use '../utils/variables' as v;
+@use '../utils/mixins' as m;
+
+
+header{
+    margin-bottom: 40px;
+
+
+    .main-header{
+        background-color: rgba(246, 243, 237, 1);
+
+
+        .header-container{
+            max-width: v.$container-width;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+
+            .header-container-inner{
+                height: 90px;
+                border-color: v.$green-border-color;
+                border-bottom-width: 2px;
+                border-bottom-style: solid;
+
+                @include m.putCenterFlex();
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+
+
+                .header-left{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    margin-left: -10px;
+                    flex: 1 1 0%;
+
+
+                    .header-nav{
+                        padding-inline: 10px;
+                        flex: 1 1 auto;
+
+
+                        ul{
+                            color: v.$nav-color;
+                            display: inline-flex;
+                            flex-wrap: wrap;
+                            justify-content: left;
+                            list-style: none;
+                            gap: 20px;
+
+                            > li:first-child{
+                                position: relative;
+
+                            }
+
+                            > li {
+
+                                a{
+                                    text-decoration: none;
+                                    
+                                    
+                                    
+                                    span{
+                                        color: v.$nav-color;
+                                        height: 40px;
+                                        font-weight: 600;
+                                        font-size: 16px;
+                                        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+                                    }
+                                    i{
+                                        color: v.$nav-chevron-color;
+                                        font-size: 12px;
+                                       
+                                    }
+
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+                .header-center{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+
+                    .logo{
+                        padding-inline: 10px;
+
+                        a{
+                            text-decoration: none;
+                            img{
+                                max-width: 220px;
+                                padding-top: 5px;
+                                padding-bottom: 5px;
+                            }
+                        }
+                    }
+                }
+
+                .header-right{
+                    flex: 1 1 0%;
+                    justify-content: flex-end;
+                    margin-right: -10px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+
+
+                    >div:first-child{
+                        color: v.$nav-color;
+
+                        >a {
+                            @include m.putCenterFlex();
+                            height: 40px;
+                            color: v.$nav-color;
+                            line-height: 1;
+                            padding-inline: 10px;
+                            text-decoration: none;
+                             
+                            > span:last-child{
+                                @include m.putCenterFlex();
+                                color: v.$nav-color;
+                                height: 40px;
+                                font-weight: 600;
+                                font-size: 14px;
+                                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            }
+                        }
+                    }
+                    >div:nth-child(2){
+                        color: v.$nav-color;
+
+                        >a {
+                            @include m.putCenterFlex();
+                            height: 40px;
+                            color: v.$nav-color;
+                            line-height: 1;
+                            padding-inline: 10px;
+                            text-decoration: none;
+                             
+                            > i{
+                                @include m.putCenterFlex();
+                                color: v.$nav-color;
+                                height: 40px;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    >div:nth-child(3){
+                        color: v.$nav-color;
+
+                        >a {
+                            @include m.putCenterFlex();
+                            gap: 5px;
+                            height: 40px;
+                            color: v.$nav-color;
+                            line-height: 1;
+                            padding-inline: 10px;
+                            text-decoration: none;
+                             
+                            > i{
+                                @include m.putCenterFlex();
+                                color: v.$nav-color;
+                                height: 40px;
+                                font-size: 16px;
+                            }
+
+                            span{
+                                font-weight: 600;
+                                font-size: 16px;
+                                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            }
+                        }
+                    }
+                    >div:nth-child(4){
+                        color: v.$nav-color;
+
+                        >a {
+                            @include m.putCenterFlex();
+                            gap: 5px;
+                            height: 40px;
+                            color: v.$nav-color;
+                            line-height: 1;
+                            padding-inline: 10px;
+                            text-decoration: none;
+                             
+                            > i{
+                                @include m.putCenterFlex();
+                                color: v.$nav-color;
+                                height: 40px;
+                                font-size: 16px;
+                            }
+
+                            span{
+                                font-weight: 600;
+                                font-size: 16px;
+                                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+    }
+}
