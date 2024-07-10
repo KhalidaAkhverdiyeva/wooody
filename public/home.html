@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home-Plant</title>
+    <title>Home-Plants</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -11,6 +12,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="../src/scss/main.css" />
   </head>
   <body>
@@ -29,18 +35,21 @@
                     <div class="dropdown-menu"></div>
                   </li>
                   <li>
-                    <a href=""><span>Blog</span></a>
+                    <a href="./blog.html"><span>Blog</span></a>
                   </li>
                   <li>
-                    <a href=""><span>Care library</span></a>
+                    <a href="./library.html"><span>Care library</span></a>
                   </li>
                   <li>
-                    <a href=""><span>About us</span></a>
+                    <a href="./about.html"><span>About us</span></a>
                   </li>
                   <li>
-                    <a href=""><span>Contact us</span></a>
+                    <a href="./contact.html"><span>Contact us</span></a>
                   </li>
                 </ul>
+                <div class="mobile-left">
+                  <a href=""><i class="fa-solid fa-bars"></i></a>
+                </div>
               </div>
             </div>
             <div class="header-center">
@@ -79,5 +88,133 @@
         </div>
       </div>
     </header>
+    <section class="main-page-part">
+      <div class="container">
+        <div class="row">
+          <section class="hero">
+            <div class="hero-left">
+              <div class="left-inner">
+                <div class="mega-nav">
+                  <ul>
+                    <li>
+                      <a href=""
+                        ><img
+                          src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/arrow.svg"
+                          alt=""
+                        />
+                        <span>Plants</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img
+                          src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/arrow.svg"
+                          alt=""
+                        />
+                        <span>Planters</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img
+                          src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/arrow.svg"
+                          alt=""
+                        />
+                        <span>Plant care</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img
+                          src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/arrow.svg"
+                          alt=""
+                        />
+                        <span>Gift ideas</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img
+                          src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/arrow.svg"
+                          alt=""
+                        />
+                        <span>Pet friendly</span></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper mySwiper hero-right">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/w-ps-slide-1-opt-1.jpg" alt="" />
+                  <div class="slide-text">
+                    <h4>
+                      A large selection of plants, fertilizers and accessories.
+                    </h4>
+                    <p>
+                      A wonderful serenity has taken possession of my entire
+                      soul, like these sweet mornings of spring which I enjoy
+                      with my whole heart.
+                    </p>
+
+                    <div class="star-text">
+                      <img
+                        class="fourperson"
+                        src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/Avatars.png"
+                        alt=""
+                      />
+                      <h4>Rated 4.9 / 5 based on <u>374 reviews</u></h4>
+                      <img
+                        class="star"
+                        src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/logo-white.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/w-ps-slide-2-opt.jpg" alt="" />
+                  <div class="slide-text">
+                    <h4>Come for the plants, stay for the service plants.</h4>
+                    <p>
+                      We believe plants and people belong together, but we know
+                      that city life sometimes keeps us apart. That’s why we set
+                      out to reconnect people.
+                    </p>
+
+                    <div class="star-text">
+                      <button class="green-btn">Shop all</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/w-ps-slide-3-opt-1.jpg" alt="" />
+                  <div class="slide-text">
+                    <h4>We value fairness and strive for simple products.</h4>
+                    <p>
+                      Specially designed for shipping delicate living plants,
+                      our innovative packaging ensures maximum protection during
+                      transit and results.
+                    </p>
+
+                    <div class="star-text">
+                      <button class="green-btn">Shop all</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- div? -->
+    </section>
+
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../src/js/home.js"></script>
   </body>
 </html>
