@@ -261,9 +261,10 @@ header .main-header .header-container .header-container-inner .header-right > di
 }
 
 .hero {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   display: flex;
   height: 580px;
+  border-bottom: 2px solid #5E6821;
 }
 .hero .hero-left {
   display: flex;
@@ -412,6 +413,88 @@ header .main-header .header-container .header-container-inner .header-right > di
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.bySize {
+  margin-bottom: 100px;
+  width: 100%;
+}
+.bySize .h4-wrapper {
+  width: 100%;
+}
+.bySize .h4-wrapper h4 {
+  line-height: 38px;
+  font-size: 28px;
+  color: #242424;
+  font-weight: 500;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.bySize .animated-video {
+  width: 100%;
+}
+.bySize .animated-video .video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  gap: 30px;
+}
+.bySize .animated-video .video-wrapper > div {
+  flex: 0 0 33.3333333333%;
+  max-width: calc(33.3333333333% - 20px);
+  position: relative;
+  height: 600px;
+}
+.bySize .animated-video .video-wrapper > div video {
+  background-position: center;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+.bySize .animated-video .video-wrapper > div .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+.bySize .animated-video .video-wrapper > div .overlay .overlay-content {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.bySize .animated-video .video-wrapper > div .overlay .overlay-content > div:first-child {
+  line-height: 26px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.bySize .animated-video .video-wrapper > div .overlay .overlay-content h4 {
+  margin-top: 7px;
+  line-height: 1.3;
+  font-size: 36px;
+  font-weight: 500;
+}
+.bySize .animated-video .video-wrapper > div .overlay .overlay-content > div:last-child {
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.bySize .animated-video .video-wrapper > div .overlay .overlay-content > div:last-child a {
+  color: white;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 13px;
 }
 
 @font-face {
