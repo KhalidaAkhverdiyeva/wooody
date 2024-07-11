@@ -24,6 +24,12 @@ header{
             margin-right: auto;
             margin-left: auto;
 
+
+            @media (max-width: 736px) {
+                width: 652px !important;
+             
+            }
+
             .header-container-inner{
                 height: 90px;
                 border-color: v.$green-border-color;
