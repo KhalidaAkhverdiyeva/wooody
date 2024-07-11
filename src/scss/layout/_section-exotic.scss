@@ -1,0 +1,76 @@
+@use '../utils/variables' as v;
+@use '../utils/mixins' as m;
+
+
+
+.exotic {
+
+    width: 1420px;
+    margin: 0 auto;
+
+
+    .exotic-title{
+
+        border-bottom-width: 2px ;
+        padding-bottom: 30px ;
+        border-bottom-color: #5e6821 ;
+        border-bottom-style: solid ;
+
+
+        h4 {
+            line-height: 38px;
+            font-size: 28px;
+            font-weight: 500;
+        }
+        
+        > div {
+            display: flex;
+            justify-content: space-between;
+
+
+            p{
+                color: #777777;
+                font-weight: 500;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+
+            button{
+                color: white;
+                background-color: #5e6821;
+                padding: 13px 20px;
+                border: none;
+            }
+            
+        }
+
+    }
+
+    .exotic-content{
+        width: 1420px;
+        margin: 0 auto;
+        display: flex;
+        gap: 40px;
+
+
+        .flower {
+            flex: 1;
+            width: 325px;
+
+
+            .flower-content-wrapper{
+                width: 325px;
+
+                img{
+                    width: 325px;
+                    height: 371px;
+                    object-fit: contain;
+
+
+                }
+
+            }
+        }
+
+        }
+}

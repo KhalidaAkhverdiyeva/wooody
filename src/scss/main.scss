@@ -16,11 +16,13 @@
 
 // LAYOUTS
 @forward './layout/header';
+@forward './layout/footer';
+
 @forward './layout/section-home-hero';
 @forward './layout/section-home-size';
-@forward './layout/footer';
 @forward './layout/section-home-insta';
 @forward './layout/section-article';
+@forward './layout/section-exotic';
 
 
 
