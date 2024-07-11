@@ -33,9 +33,6 @@
         .container{
             width: 650px !important;
         }
-
-
-       
     }
 
     .footer-big-content {
@@ -82,7 +79,112 @@
        
        
     }
-    
 
-  
+
+    .article-inside{
+
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .article, .article-title, .article-content{
+        width: 650px !important;
+        margin: 0 auto !important;
+    }
+
+    .article-img{
+        width: 600px !important;
+        height: 260px !important;
+    }
+    
   } 
+
+  @media (max-width: 1024px) {
+    .article .article-inside {
+      flex-direction: column;
+    }
+  
+    .article .article-left {
+      flex: 0 0 100%;
+      img {
+        width: 100%;
+      }
+    }
+  
+    .article .article-right {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .article .article-title h4 {
+      font-size: 24px;
+    }
+  
+    .article .article-inside {
+      gap: 10px;
+    }
+  
+    .article .article-left {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  
+    .article .article-right > div:first-child > h4 {
+      font-size: 32px;
+    }
+  
+    .article .article-right > div:last-child a {
+      font-size: 12px;
+      padding: 0 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .article {
+      padding: 0 10px;
+    }
+  
+    .article .article-title h4 {
+      font-size: 20px;
+    }
+  
+    .article .article-right > div:first-child > h4 {
+      font-size: 28px;
+    }
+  
+    .article .article-right > div:last-child a {
+      font-size: 11px;
+      padding: 0 10px;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .insta{
+        margin-left: 30px !important;
+    }
+    .insta .container .insta-content {
+      flex-direction: column;
+      
+    }
+  
+    .insta .container .insta-content > div {
+      flex: 1 0 calc(100% / 2);
+      max-width: calc(100% / 2);
+    }
+
+    .img-wrapper{
+        overflow: visible !important;
+        width: 650px !important;
+            height: 400px !important;
+
+        img{
+            width: 650px !important;
+            height: 400px !important;
+        }
+    }
+  }
