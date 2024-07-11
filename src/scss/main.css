@@ -743,8 +743,6 @@ footer .container .footer-slim > div:first-child p strong {
 }
 .insta .container {
   width: 1420px;
-  padding-left: 15px;
-  padding-right: 15px;
   width: 100%;
 }
 .insta .container .insta-title {
@@ -761,7 +759,7 @@ footer .container .footer-slim > div:first-child p strong {
   height: 100%;
   z-index: 1;
   display: flex;
-  gap: 30px;
+  gap: 36px;
 }
 .insta .container .insta-content > div {
   flex: 16.6666666667%;
@@ -775,6 +773,158 @@ footer .container .footer-slim > div:first-child p strong {
 .insta .container .insta-content > div > .img-wrapper > img {
   width: 206px;
   height: 206px;
+}
+
+.article {
+  width: 1420px;
+}
+.article .article-title {
+  border-bottom-width: 2px;
+  padding-bottom: 30px;
+  border-bottom-color: #5e6821;
+  border-bottom-style: solid;
+}
+.article .article-title h4 {
+  line-height: 38px;
+  font-size: 28px;
+  font-weight: 500;
+}
+.article .article-content {
+  border-bottom-width: 2px;
+  border-bottom-color: #5e6821;
+  border-bottom-style: solid;
+  display: flex;
+  flex-direction: column;
+}
+.article .article-content .each-article {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #d3d1d1;
+}
+.article .article-content .each-article .article-inside {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 50px;
+}
+.article .article-content .each-article .article-inside .article-left {
+  overflow: hidden;
+  flex: 0 0 320px;
+  position: relative;
+}
+.article .article-content .each-article .article-inside .article-left img {
+  width: 320px;
+  height: 213px;
+  transition: transform 0.3s ease-in-out;
+}
+.article .article-content .each-article .article-inside .article-left .top-left-text {
+  position: absolute;
+  padding: 5px 0px;
+  color: black;
+  top: 15px;
+  left: 15px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-width: 53px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.article .article-content .each-article .article-inside .article-left .top-left-text > div {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+}
+.article .article-content .each-article .article-inside .article-left .top-left-text > div:last-child {
+  font-size: 14px;
+}
+.article .article-content .each-article .article-inside .article-left .bottom-left-text {
+  position: absolute;
+  padding: 5px 10px;
+  color: black;
+  bottom: 20px;
+  left: 10px;
+  background-color: #5e6821;
+  color: white;
+  display: inline-block;
+  color: #fff;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.article .article-content .each-article .article-inside .article-right {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.article .article-content .each-article .article-inside .article-right > div:first-child {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+  gap: 10px;
+}
+.article .article-content .each-article .article-inside .article-right > div:first-child > .article-theme-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+}
+.article .article-content .each-article .article-inside .article-right > div:first-child > .article-theme-top span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.article .article-content .each-article .article-inside .article-right > div:first-child > .article-theme-top img {
+  width: 22px;
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  vertical-align: middle;
+}
+.article .article-content .each-article .article-inside .article-right > div:first-child > .article-theme-top a {
+  text-decoration: none;
+  color: #a5a5a5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.article .article-content .each-article .article-inside .article-right > div:first-child > .article-theme-top > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #a5a5a5;
+}
+.article .article-content .each-article .article-inside .article-right > div:first-child > .article-theme-top > div:last-child {
+  display: flex;
+  gap: 15px;
+}
+.article .article-content .each-article .article-inside .article-right > div:first-child > .article-theme-top > div:last-child > i {
+  color: #a5a5a5;
+}
+.article .article-content .each-article .article-inside .article-right > div:first-child > h4 {
+  font-size: 38px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #333333;
+}
+.article .article-content .each-article .article-inside .article-right > div:last-child a {
+  padding: 0px 20px;
+  min-height: 42px;
+  font-size: 13px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.2;
+  cursor: pointer;
+  color: white;
+  background-color: #5e6821;
+  white-space: nowrap;
+}
+.article .article-content .each-article:hover .article-img {
+  transform: scale(1.1);
 }
 
 @font-face {

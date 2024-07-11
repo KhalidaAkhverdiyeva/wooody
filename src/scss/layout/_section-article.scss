@@ -1,0 +1,201 @@
+@use '../utils/variables' as v;
+@use '../utils/mixins' as m;
+
+
+
+.article{
+
+    width: 1420px;
+
+    .article-title{
+        border-bottom-width: 2px ;
+        padding-bottom: 30px ;
+        border-bottom-color: #5e6821 ;
+        border-bottom-style: solid ;
+
+        h4{
+            line-height: 38px;
+            font-size: 28px;
+            font-weight: 500;
+        }
+
+    }
+
+    .article-content{
+        border-bottom-width: 2px ;
+        border-bottom-color: #5e6821 ;
+        border-bottom-style: solid ;
+        display: flex;
+        flex-direction: column;
+
+
+        .each-article{
+            padding-bottom: 50px;
+            border-bottom: 1px solid #d3d1d1;
+
+
+
+
+            .article-inside{
+
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                padding-top: 50px;
+
+
+                .article-left{
+                    overflow: hidden;
+                    flex: 0 0 320px;
+                    position: relative;
+
+                    img{
+                        width: 320px;
+                        height: 213px;
+                        transition: transform 0.3s ease-in-out;
+                    }
+
+                    .top-left-text{
+                        position: absolute;
+                        padding: 5px 0px;
+                        color: black;
+                        top: 15px;
+                        left: 15px;
+                        background-color: white;
+                        display: flex;
+                        flex-direction: column;
+                        min-width: 53px;
+                        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+                        > div {
+                            display: flex;
+                            justify-content: center;
+                            font-weight: 500;
+                        }
+
+                        > div:last-child{
+                            font-size: 14px;
+                        }
+                    }
+                    .bottom-left-text{
+                        position: absolute;
+                        padding: 5px 10px;
+                        color: black;
+                        bottom: 20px;
+                        left: 10px;
+                        background-color: #5e6821;
+                        color: white;
+                        display: inline-block;
+                        color: #fff;
+                        vertical-align: top;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    }
+
+                }
+
+                .article-right{
+                    flex: 1 1 auto;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+
+                    >div:first-child{
+                        display: inline-flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        flex-grow: 1;
+                        gap: 10px;
+
+
+                        > .article-theme-top{
+                            display: inline-flex;
+                            align-items: center;
+                            gap: 15px;
+
+                            span{
+                                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+                            }
+                            img{
+                                width: 22px;
+                                border-radius: 50%;
+                                max-width: 100%;
+                                height: auto;
+                                border: 0;
+                                vertical-align: middle;
+
+                            }
+                            a{
+                                text-decoration: none;
+                                color: #a5a5a5;
+                                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+                            }
+
+                            > div:first-child{
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;  
+                                color: #a5a5a5;                              
+                            }
+                            > div:last-child{
+                                display: flex;
+                                gap: 15px;
+
+                                > i{
+                                    color: #a5a5a5;
+                                }
+
+                            }
+
+                        }
+
+                        > h4{
+                            font-size: 38px;
+                            line-height: 1.4;
+                            font-weight: 500;
+                            color: #333333;
+
+
+                        }
+                    }
+                    >div:last-child{
+                        
+
+                        a{
+                            padding: 0px 20px;
+                            min-height: 42px;
+                            font-size: 13px;
+                            position: relative;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            outline: none;
+                            vertical-align: middle;
+                            text-align: center;
+                            text-decoration: none;
+                            line-height: 1.2;
+                            cursor: pointer;
+                            color: white;
+                            background-color: #5e6821;
+                            white-space: nowrap;
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+        .each-article:hover .article-img {
+            transform: scale(1.1);
+
+        }
+       
+
+    }
+}

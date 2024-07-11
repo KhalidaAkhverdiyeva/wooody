@@ -7,8 +7,6 @@
     margin-bottom: 30px;
     .container{
         width: 1420px;
-        padding-left: 15px;
-        padding-right: 15px;
         width: 100%;
 
         .insta-title{
@@ -30,7 +28,7 @@
             height: 100%;
             z-index: 1;
             display: flex;
-            gap: 30px;
+            gap: 36px;
 
             > div{
                 flex: calc(100% / 6);
