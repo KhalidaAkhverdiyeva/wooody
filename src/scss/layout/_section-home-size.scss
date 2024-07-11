@@ -7,25 +7,23 @@
     margin-bottom: 100px;
     width: 100%;
 
-    .h4-wrapper{
+
+    .h4-wrapper {
         width: 100%;
-
-        h4{
-            line-height: 38px;
-            font-size: 28px;
-            color: v.$text-title-color;
-            font-weight: 500;
-            margin-bottom: 30px;
-            margin-top: 30px;
+      
+        h4 {
+          line-height: 38px;
+          font-size: 28px;
+          color: v.$text-title-color;
+          font-weight: 500;
+          margin-bottom: 30px;
+          margin-top: 30px;
         }
-    
-
-    }
+      }
 
    
     .animated-video{
         width: 100%;
-
 
         .video-wrapper{
             position: relative;
@@ -35,13 +33,11 @@
             display: flex;
             gap: 30px;
 
-
             > div{
                 flex: 0 0 calc(100% / 3);
                 max-width: calc((100% / 3) - 20px);
                 position: relative;
                 height: 600px;
-                
 
 
                 video{
@@ -51,6 +47,8 @@
                     height: 600px;
                     object-fit: cover;
                     position: relative;
+
+
                 }
 
                 .overlay {
@@ -109,6 +107,31 @@
                     
                   }
             }
+
+            > div:nth-child(1){
+
+               
+            }
+            > div:nth-child(2){
+
+                @media (max-width: 736px) {
+                    display: none !important;
+                 
+                }
+            }
+            > div:nth-child(3){
+
+                @media (max-width: 736px) {
+                    display: none !important;
+                 
+                }
+            }
         }
     }
+
+
+    
 }
+
+
+
