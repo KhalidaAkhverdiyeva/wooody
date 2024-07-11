@@ -13,8 +13,6 @@
 
         border-bottom-width: 2px ;
         padding-bottom: 30px ;
-        border-bottom-color: #5e6821 ;
-        border-bottom-style: solid ;
 
 
         h4 {
@@ -51,6 +49,7 @@
         margin: 0 auto;
         display: flex;
         gap: 40px;
+        margin-bottom: 50px;
 
 
         .flower {
@@ -60,6 +59,9 @@
 
             .flower-content-wrapper{
                 width: 325px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
 
                 img{
                     width: 325px;
@@ -71,6 +73,7 @@
 
                 .colors{
                     display: flex;
+                    justify-content: center;
                     gap: 10px;
 
 
@@ -164,6 +167,51 @@
 
 
                 }
+
+                .flower-title{
+                    display: flex;
+                    justify-content: center;
+                    font-size: 16px;
+                    color: #333333;
+                    font-weight: 500;
+
+                }
+
+                .star{
+                    display: flex;
+                    justify-content: center;
+                    
+
+                    img{
+                        width: 90px;
+                        height: 25px;
+                    }
+                }
+
+                .price{
+                    color: #5e6821;
+                    font-weight: 600;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 16px;
+                }
+
+                .btn-div{
+                    display: flex;
+                    justify-content: center;
+                    button{
+                        padding: 5px 14px;
+                        min-height: 36px;
+                        font-size: 12px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #5e6821;
+                        color: white;
+                        border: none;
+                    }
+                }
+               
 
             }
         }

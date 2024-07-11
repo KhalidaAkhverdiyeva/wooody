@@ -935,8 +935,6 @@ footer .container .footer-slim > div:first-child p strong {
 .exotic .exotic-title {
   border-bottom-width: 2px;
   padding-bottom: 30px;
-  border-bottom-color: #5e6821;
-  border-bottom-style: solid;
 }
 .exotic .exotic-title h4 {
   line-height: 38px;
@@ -963,6 +961,7 @@ footer .container .footer-slim > div:first-child p strong {
   margin: 0 auto;
   display: flex;
   gap: 40px;
+  margin-bottom: 50px;
 }
 .exotic .exotic-content .flower {
   flex: 1;
@@ -970,6 +969,9 @@ footer .container .footer-slim > div:first-child p strong {
 }
 .exotic .exotic-content .flower .flower-content-wrapper {
   width: 325px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .exotic .exotic-content .flower .flower-content-wrapper img {
   width: 325px;
@@ -979,6 +981,7 @@ footer .container .footer-slim > div:first-child p strong {
 }
 .exotic .exotic-content .flower .flower-content-wrapper .colors {
   display: flex;
+  justify-content: center;
   gap: 10px;
 }
 .exotic .exotic-content .flower .flower-content-wrapper .colors > div:first-child {
@@ -1043,6 +1046,43 @@ footer .container .footer-slim > div:first-child p strong {
   height: 14.5px;
   width: 14.5px;
   z-index: 10;
+}
+.exotic .exotic-content .flower .flower-content-wrapper .flower-title {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  color: #333333;
+  font-weight: 500;
+}
+.exotic .exotic-content .flower .flower-content-wrapper .star {
+  display: flex;
+  justify-content: center;
+}
+.exotic .exotic-content .flower .flower-content-wrapper .star img {
+  width: 90px;
+  height: 25px;
+}
+.exotic .exotic-content .flower .flower-content-wrapper .price {
+  color: #5e6821;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+}
+.exotic .exotic-content .flower .flower-content-wrapper .btn-div {
+  display: flex;
+  justify-content: center;
+}
+.exotic .exotic-content .flower .flower-content-wrapper .btn-div button {
+  padding: 5px 14px;
+  min-height: 36px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5e6821;
+  color: white;
+  border: none;
 }
 
 @font-face {
