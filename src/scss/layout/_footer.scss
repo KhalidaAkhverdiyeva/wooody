@@ -41,7 +41,7 @@ footer{
                     margin-bottom: 60px !important;
                     border-right-width: 2px !important;
                     padding-top: 0px !important;
-                    border-right-color: #5e6821 !important;
+                    border-right-color: #5e6821 ;
                     border-right-style: solid !important;
 
 
@@ -117,6 +117,7 @@ footer{
 
                     >div:nth-child(5){
                         display: flex;
+                        flex-wrap: wrap;
 
                         > div {
                             justify-content: center;
@@ -149,6 +150,7 @@ footer{
                     width: 100%;
                     margin-left: 25px !important;
                     display: flex;
+                    // flex-wrap: wrap;
 
 
                     > div {
