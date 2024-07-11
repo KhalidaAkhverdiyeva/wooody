@@ -738,6 +738,45 @@ footer .container .footer-slim > div:first-child p strong {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #3b3a3a;
 }
+.insta {
+  margin-bottom: 30px;
+}
+.insta .container {
+  width: 1420px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+.insta .container .insta-title {
+  margin-bottom: 30px;
+}
+.insta .container .insta-title h4 {
+  line-height: 38px;
+  font-size: 28px;
+  color: #242424;
+  font-weight: 500;
+}
+.insta .container .insta-content {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  gap: 30px;
+}
+.insta .container .insta-content > div {
+  flex: 16.6666666667%;
+  max-width: 16.6666666667%;
+}
+.insta .container .insta-content > div > .img-wrapper {
+  overflow: hidden;
+  width: 206px;
+  height: 206px;
+}
+.insta .container .insta-content > div > .img-wrapper > img {
+  width: 206px;
+  height: 206px;
+}
+
 @font-face {
   font-family: "Clash Display";
   src: url("./fonts/ClashDisplay-Bold.woff2") format("woff2"), url("./fonts/ClashDisplay-Bold.woff") format("woff");
