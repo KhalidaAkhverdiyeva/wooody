@@ -1207,6 +1207,112 @@ footer .container .footer-slim > div:first-child p strong {
   vertical-align: middle;
 }
 
+.overlap-white {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -200px !important;
+  margin-bottom: 90px !important;
+  margin-left: -15px;
+  margin-right: -15px;
+  z-index: 10;
+}
+.overlap-white .overlap-left {
+  display: flex;
+  align-items: stretch;
+  width: 41%;
+  background-color: #E7E5D9;
+  z-index: 10;
+}
+.overlap-white .overlap-left .overlap-left-inner {
+  padding: 40px 40px;
+}
+.overlap-white .overlap-left .overlap-left-inner > div:first-child {
+  margin-bottom: 10px !important;
+}
+.overlap-white .overlap-left .overlap-left-inner > div:nth-child(2) {
+  line-height: 48px;
+  font-size: 38px;
+  font-weight: 500;
+  color: #242424;
+  margin-bottom: 40px;
+}
+.overlap-white .overlap-left .overlap-left-inner > div:nth-child(3) {
+  display: flex;
+  gap: 20px;
+  padding-top: 30px;
+  align-items: center;
+  border-top: 1px solid #5E6821;
+}
+.overlap-white .overlap-left .overlap-left-inner > div:nth-child(3) > div:first-child {
+  max-width: 50%;
+  overflow: hidden;
+}
+.overlap-white .overlap-left .overlap-left-inner > div:nth-child(3) > div:last-child {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.overlap-white .overlap-left .overlap-left-inner > div:nth-child(3) > div:last-child .jenny {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.overlap-white .overlap-left .overlap-left-inner > div:nth-child(3) > div:last-child .founder {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #858583;
+}
+.overlap-white .overlap-right {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  background-position: center center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  margin-left: 15px;
+  padding-top: 100px;
+  padding-right: 15px;
+  padding-bottom: 100px;
+  padding-left: 15px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  z-index: 10;
+  background-image: url(https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-video-thumbnail-opt.jpg?id=867);
+}
+.overlap-white .overlap-right .overlap-right-inside {
+  text-align: center;
+  width: 100%;
+}
+.overlap-white .overlap-right .overlap-right-inside a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  text-decoration: none;
+  color: white;
+}
+.overlap-white .overlap-right .overlap-right-inside a span {
+  font-size: 100px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1em;
+  height: 1em;
+}
+.overlap-white .overlap-right .overlap-right-inside a span span:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: min(0.04em, 2px) solid currentColor;
+  opacity: 0.4;
+  border-radius: 50%;
+  transition: opacity 0.5s cubic-bezier(0, 0, 0.44, 1.18);
+}
+
 @font-face {
   font-family: "Clash Display";
   src: url("./fonts/ClashDisplay-Bold.woff2") format("woff2"), url("./fonts/ClashDisplay-Bold.woff") format("woff");

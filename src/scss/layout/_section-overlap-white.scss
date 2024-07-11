@@ -1,0 +1,149 @@
+@use '../utils/variables' as v;
+@use '../utils/mixins' as m;
+
+
+
+
+.overlap-white{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -200px !important;
+    margin-bottom: 90px !important;
+    margin-left: -15px;
+    margin-right: -15px;
+    z-index: 10;
+
+
+    .overlap-left{
+        display: flex;
+        align-items: stretch;
+        width: 41%;
+        background-color: #E7E5D9;
+        z-index: 10;
+
+        
+        .overlap-left-inner{
+            padding: 40px 40px;
+
+            > div:first-child{
+                margin-bottom: 10px !important;
+            }
+
+            >div:nth-child(2){
+                line-height: 48px;
+                font-size: 38px;
+                font-weight: 500;
+                color: #242424;
+                margin-bottom: 40px;
+                
+            }
+            >div:nth-child(3){
+                display: flex;
+                gap: 20px;
+                padding-top: 30px;
+                align-items: center;
+                border-top: 1px solid #5E6821;
+
+                >div:first-child{
+                    max-width: 50%;
+                    overflow: hidden;
+
+                    img{
+                        
+                    }
+                }
+                >div:last-child{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .jenny{
+                        font-size: 24px;
+                        line-height: 24px;
+                        font-weight: 500;
+                    }
+
+                    .founder{
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        color: #858583;
+                    }
+
+
+                    
+                }
+                
+            }
+
+        }
+        .overlap-left-inner-2{
+          
+           
+
+        }
+
+    }
+
+    .overlap-right{
+        display: flex;
+        align-items: stretch;
+        height: 100%;
+        background-position: center center;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        margin-right: 15px ;
+        margin-left: 15px ;
+        padding-top: 100px ;
+        padding-right: 15px ;
+        padding-bottom: 100px ;
+        padding-left: 15px ;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        z-index: 10;
+
+        background-image: url(https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-video-thumbnail-opt.jpg?id=867);
+
+
+        .overlap-right-inside{
+
+            text-align: center;
+            width: 100%;
+
+
+            a{
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                text-decoration: none;
+                color: white;
+
+                span{
+                    font-size: 100px;
+                    color: rgb(255, 255, 255);
+                    position: relative;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 1em;
+                    height: 1em;
+
+
+                    span:after{
+                        content: '';
+                        position: absolute;
+                        inset: 0;
+                        border: min(.04em, 2px) solid currentColor;
+                        opacity: .4;
+                        border-radius: 50%;
+                        transition: opacity 0.5s cubic-bezier(0, 0, 0.44, 1.18);
+                    }
+                }
+
+               
+            }
+        }
+
+    }
+}
