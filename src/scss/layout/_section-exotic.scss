@@ -69,6 +69,102 @@
 
                 }
 
+                .colors{
+                    display: flex;
+                    gap: 10px;
+
+
+                    > div:first-child{
+                        border: 2px solid rgb(0, 0, 0, 0.075);
+                        
+                        border-radius: 50%;
+                        background-color: white;
+                        width: 20px;
+                        height: 20px;
+                        display: flex;
+                         justify-content: center;
+                        align-items: center;
+
+
+                        span{
+                            display: block;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: rgb(31, 31, 31);
+                            height: 14.5px;
+                            width: 14.5px;
+                            z-index: 10;
+
+    
+                        }
+                        
+
+                    }
+                    > div:nth-child(2){
+                        border: 2px solid rgb(0, 0, 0, 0.075);
+                        
+                        border-radius: 50%;
+                        background-color: white;
+                        width: 20px;
+                        height: 20px;
+                        display: flex;
+                         justify-content: center;
+                        align-items: center;
+
+
+                        span{
+                            display: block;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: #56717e;
+                            height: 14.5px;
+                            width: 14.5px;
+                            z-index: 10;
+
+    
+                        }
+                        
+
+                    }
+                    > div:last-child{
+                        border: 2px solid rgb(0, 0, 0, 0.075);
+                        
+                        border-radius: 50%;
+                        background-color: white;
+                        width: 20px;
+                        height: 20px;
+                        display: flex;
+                         justify-content: center;
+                        align-items: center;
+
+
+                        span{
+                            display: block;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: wheat;
+                            height: 14.5px;
+                            width: 14.5px;
+                            z-index: 10;
+
+    
+                        }
+                        
+
+                    }
+
+
+                   
+
+
+                }
+
             }
         }
 
