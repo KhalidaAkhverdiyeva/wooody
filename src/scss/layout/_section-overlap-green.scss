@@ -1,0 +1,33 @@
+@use '../utils/variables' as v;
+@use '../utils/mixins' as m;
+
+
+
+.overlap-green {
+    padding-top: 80px !important;
+    padding-bottom: 280px !important;
+    background-color: #5f6921 !important;
+    position: relative;
+
+
+    .green-text{
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        line-height: 78px;
+        font-size: 68px;
+        max-width: 864px;
+        margin-left: 50px;
+
+
+        p{
+            color: white;
+            font-weight: 500;
+
+            img{
+                vertical-align: middle;
+            }
+        }
+    }
+   
+  }

@@ -2,22 +2,25 @@
 @use '../utils/mixins' as m;
 
 .main-page-part{
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+    width: 100% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
 
+   
+    
+}
 .container{
-    max-width: 1420px;
+    max-width: 1420px !important;
     @extend .main-page-part;
-    .row{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        margin-bottom: 40px;
-
-        
-    }
+    
+  
 
 }
+.row{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: flex-start !important;
+    margin-bottom: 40px !important;
+
     
 }
