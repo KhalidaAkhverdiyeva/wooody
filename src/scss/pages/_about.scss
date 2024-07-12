@@ -1,0 +1,196 @@
+@use '../utils/variables' as v;
+@use '../utils/mixins' as m;
+
+
+
+.about-hero{
+
+    .about-title{
+        @include m.title-text();
+        color: #5E6821;
+
+        margin-bottom: 40px;
+    }
+
+
+    .container{
+        .about-content{
+
+            .crazy-title{
+                line-height: 78px;
+                font-size: 68px;
+                font-weight: 500;
+                color: #242424;
+
+
+               
+            }
+
+
+            .crazy-image{
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+
+            .crazy-text{ 
+                margin-bottom: 90px;
+                margin-top: 70px;
+                display: flex;
+                justify-content: space-between;
+                gap: 200px;
+                
+                
+                .crazy-text-left{
+              
+                width: 50%;
+
+
+                >div:first-child{
+                    // width: 50%;
+                    line-height: 58px;
+                    font-size: 48px;
+                    font-weight: 500;
+                    // max-width: 580px;
+                    color: #242424;
+                }
+                >div:last-child{
+                    // width: 50%;
+                    margin-top: 20px;
+                    // max-width: 580px;
+                    color: #777777;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+            }
+
+                .crazy-text-right{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 50%;
+
+
+                >div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 35px 0px;
+
+
+                    >div:first-child{
+                        line-height: 38px;
+                        font-size: 28px;
+                        font-weight: 500;
+                    }
+
+                    >div:last-child{
+                        line-height: 58px;
+                        font-size: 48px;
+                        color: #bbbbbb;
+                        font-weight: 500;
+                    }
+                }
+
+
+                >div:first-child{
+                    border-top: 2px solid #5E6821;
+                    border-bottom: 2px solid #5E6821;
+                }
+                >div:last-child{
+                    border-top: 2px solid #5E6821;
+                    border-bottom: 2px solid #5E6821;
+                }
+                
+
+            }
+        }
+           
+    
+        }
+
+    }
+
+    
+
+}
+
+
+.about-Swiper{
+    padding-left: 15px; 
+    padding-right: 15px;
+
+
+    .swiper-wrapper{
+
+
+        .swiper-slide{
+            
+            width: 506.333px;
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            overflow: hidden;
+  
+
+
+            img{
+                width: 100%; 
+                height: auto; 
+                object-fit: cover;
+
+            }
+        }
+
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        background-color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        opacity: 0;
+        visibility: hidden;
+
+        &::after {
+            font-size: 20px;
+            color: black;
+        }
+    }
+
+    .swiper-button-next{
+        margin-right: 10px;
+    }
+    .swiper-button-prev{
+        margin-left: 10px;
+    }
+
+    .swiper-button-next {
+        right: 10px;
+    }
+
+    .swiper-button-prev {
+        left: 10px;
+    }
+
+    &:hover .swiper-button-next,
+    &:hover .swiper-button-prev {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    
+
+
+}
+
