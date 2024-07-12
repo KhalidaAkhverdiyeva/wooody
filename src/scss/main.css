@@ -596,8 +596,6 @@ footer .container .footer-slim > div:first-child p strong {
   align-items: center;
   border-right-width: 2px !important;
   padding-top: 0px !important;
-  border-right-color: #5e6821 !important;
-  border-right-style: solid !important;
 }
 @media (max-width: 990px) {
   .hero .hero-left {
@@ -606,6 +604,7 @@ footer .container .footer-slim > div:first-child p strong {
 }
 .hero .hero-left .left-inner {
   margin-right: 70px;
+  margin-top: 80px;
 }
 .hero .hero-left .left-inner .mega-nav {
   flex-grow: 1;
@@ -650,8 +649,9 @@ footer .container .footer-slim > div:first-child p strong {
 .hero .swiper {
   max-width: 1035px;
   max-height: 580px;
-  margin-left: 40px;
+  padding-left: 40px;
   cursor: pointer;
+  border-left: #5e6821 solid 2px;
 }
 @media (max-width: 1024px) {
   .hero .swiper {
@@ -738,6 +738,7 @@ footer .container .footer-slim > div:first-child p strong {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 580px;
 }
 
 .bySize {
@@ -1264,12 +1265,8 @@ footer .container .footer-slim > div:first-child p strong {
 }
 .overlap-white .overlap-right {
   display: flex;
-  align-items: stretch;
-  height: 100%;
   background-position: center center;
   flex-grow: 1;
-  display: flex;
-  flex-direction: column;
   margin-right: 15px;
   margin-left: 15px;
   padding-top: 100px;
@@ -1284,6 +1281,9 @@ footer .container .footer-slim > div:first-child p strong {
 .overlap-white .overlap-right .overlap-right-inside {
   text-align: center;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .overlap-white .overlap-right .overlap-right-inside a {
   display: inline-flex;
