@@ -5,6 +5,10 @@
 //PAGES
 @forward './pages/home';
 @forward './pages/blog';
+@forward './pages/contact';
+@forward './pages/library';
+@forward './pages/about';
+
 
 
 // UTILS
@@ -28,16 +32,7 @@
 
 
 
-//PAGES 
-
-@forward './pages/contact';
-
-@forward './pages/about';
-
-
-
-
-
+//SPECIAL FONT ZIP
 
 @font-face {
     font-family: 'Clash Display';
