@@ -189,8 +189,6 @@ header .main-header {
 header .main-header .header-container {
   max-width: 1420px;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -418,8 +416,6 @@ header .main-header .header-container .header-container-inner .header-right > di
 footer {
   max-width: 1420px;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -441,8 +437,6 @@ footer .container .footer-big > div:last-child {
 }
 footer .container .footer-big > div:last-child .footer-big-left {
   flex: 2;
-  padding-left: 15px;
-  padding-right: 15px;
   width: 100%;
   margin-bottom: 60px !important;
   border-right-width: 2px !important;
@@ -1519,6 +1513,7 @@ footer .container .footer-slim > div:first-child p strong {
 .about-Swiper {
   padding-left: 15px;
   padding-right: 15px;
+  margin-bottom: 50px;
 }
 .about-Swiper .swiper-wrapper .swiper-slide {
   width: 506.333px;
@@ -1569,6 +1564,160 @@ footer .container .footer-slim > div:first-child p strong {
 .about-Swiper:hover .swiper-button-next, .about-Swiper:hover .swiper-button-prev {
   opacity: 1;
   visibility: visible;
+}
+
+.last .last-wrapper {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+.last .last-wrapper .left-side {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  flex: 1;
+  padding-right: 30px;
+}
+.last .last-wrapper .left-side .left-h {
+  line-height: 58px;
+  font-size: 48px;
+  font-weight: 500;
+  color: #242424;
+}
+.last .last-wrapper .left-side .left-p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #777777;
+}
+.last .last-wrapper .left-side .left-b button {
+  padding: 5px 14px;
+  min-height: 36px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5e6821;
+  color: white;
+  border: none;
+}
+.last .last-wrapper .right-img-1 {
+  flex: 1;
+  position: relative;
+}
+.last .last-wrapper .right-img-1 img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+.last .last-wrapper .right-img-1 .image-text {
+  position: absolute;
+  bottom: 30px;
+  left: 100px;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 5;
+}
+.last .last-wrapper .right-img-1 .image-text h4 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.last .last-wrapper .right-img-1 .image-text p {
+  color: #d9d4d4;
+  font-weight: 500;
+}
+.last .last-wrapper .right-img-1 .image-text > div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.last .last-wrapper .right-img-1 .image-text > div:last-child > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff !important;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.last .last-wrapper .right-img-1 .gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  z-index: 4;
+}
+.last .last-wrapper .right-img-2 {
+  flex: 1;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.last .last-wrapper .right-img-2 img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.last .last-wrapper .right-img-2 .image-text {
+  position: absolute;
+  bottom: 30px;
+  left: 100px;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 5;
+}
+.last .last-wrapper .right-img-2 .image-text h4 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.last .last-wrapper .right-img-2 .image-text p {
+  color: #d9d4d4;
+  font-weight: 500;
+}
+.last .last-wrapper .right-img-2 .image-text > div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.last .last-wrapper .right-img-2 .image-text > div:last-child > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff !important;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.last .last-wrapper .right-img-2 .gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  z-index: 4;
 }
 
 @font-face {
