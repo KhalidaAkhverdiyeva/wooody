@@ -1,0 +1,173 @@
+@use '../utils/variables' as v;
+@use '../utils/mixins' as m;
+
+
+
+.contact-hero{
+
+    h1{
+        font-weight: 500;
+    font-size: 28px;
+    color: rgb(94, 104, 33);
+    line-height: 1.2;
+    margin-bottom: 10px;
+    }
+
+    .row{
+
+        .contact-answers{
+            display: flex;
+         
+
+            .answer-left{
+                width: 60%;
+               
+
+
+                .left-1{
+                    max-width: 700px;
+                    line-height: 78px;
+                    font-size: 68px;
+                    color: #242424;
+                    font-weight: 500;
+                    
+                }
+                .left-2{
+                    max-width: 580px;
+                    color: #939292;
+                    font-weight: 400;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    margin: 20px 0;
+
+                    strong{
+                        color: #676f31;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    }
+
+                }
+                .left-3{
+                    margin: 20px 0;
+
+
+
+
+                    button{
+                        @include m.greenBtn();
+                        font-weight: 500;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+                    }
+                    
+
+                }
+                .left-4{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: 10px;
+                    margin-left: -3px;
+
+                    >div{
+                       justify-content: center;
+                        align-items: center;
+                        display: flex;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        border: 2px solid rgb(94, 104, 33);
+                        color: rgb(94, 104, 33);
+                        margin: 4px;
+                        vertical-align: middle;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+
+                }
+
+            }
+
+            .answer-right{
+                padding-left: 15px;
+                padding-right: 15px;
+                width: 40%;
+                
+
+                img{
+                    width: 100%;
+                 
+                }
+
+            }
+        }
+
+        .address{
+            margin-top: 50px;
+            border-top: 2px solid #676f31;
+
+            .address-content{
+                display: flex;
+                margin-top: 50px;
+
+               >div:first-child{
+                width: 25%;
+                font-size: 38px;
+                line-height: 1.7em;
+                font-weight: 300;
+                color: #333;
+                display: flex;
+                flex-direction: row;
+
+
+                img{
+                    max-height: 18px;
+                    order: 1;
+                    margin-inline-start: 7px;
+                }
+                span{
+                    line-height: 58px;
+                    font-size: 48px;
+                    font-weight: 500;
+                }
+            
+               }
+
+               >div:last-child{
+                display: flex;
+                width: 75%;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+                > div:first-child{
+                    margin-right: 170px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+                    > div{
+                        margin-bottom: 20px;
+                        font-weight: 500;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+                    }
+                }
+
+                >div:nth-child(2){
+                    margin-right: 400px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+                    >div {
+                        margin-bottom: 20px;
+                        color: #666464;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    }
+                }
+
+                >div:nth-child(3){
+                     >div{
+                        font-weight: 500;
+                        font-size: 18px;
+                     }
+                }
+               }
+            }
+
+        }
+    }
+
+}

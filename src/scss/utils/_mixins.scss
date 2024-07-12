@@ -3,3 +3,26 @@
     justify-content: center;
     align-items: center;
   }
+
+
+
+@mixin title-text(){
+  line-height: 38px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #242424;
+}
+
+
+
+  @mixin greenBtn(){
+    padding: 5px 14px;
+    min-height: 36px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5e6821;
+    color: white;
+    border: none;
+  }
