@@ -1,7 +1,7 @@
 var swiper = new Swiper(".about-Swiper", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
-    slidesPerGroup: 3,
+    slidesPerGroup: 1,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -11,4 +11,11 @@ var swiper = new Swiper(".about-Swiper", {
         el: '.swiper-pagination',
         clickable: true,
     },
+    breakpoints: {
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+        }
+    }
 });

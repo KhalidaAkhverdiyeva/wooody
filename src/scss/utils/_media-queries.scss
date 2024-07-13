@@ -139,12 +139,47 @@
       footer{
         padding: 0 15px !important;
       }
+
+      .footer-big > div:last-child{
+        flex-direction: column !important;
+      }
+      .footer-big-right > div:last-child{
+        display: none !important;
+
+      }
+
+      .footer-big-right {
+        margin-left: 0 !important;
+
+
+        >div{
+          display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+        }
+
+      }
+      .footer-big-left{
+        display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border:  none !important;
+
+      >div{
+        display: flex !important;
+        text-align: center;
+      }
+
+      >div:nth-child(3){
+        form{
+          flex-wrap: nowrap !important;
+        }
+      }
+      }
       
 }
-
-
-
-
 
 @media only screen and (max-width: 990px){
 
@@ -348,5 +383,136 @@
     }
   }
 }
+
+
+//CONTACT PAGE STARTS//
+@media only screen and (max-width: 1024px){
+
+  .contact-hero{
+    padding: 0 15px;
+
+
+    h1{
+      font-size: 22px !important;
+    }
+  }
+
+
+  .left-1{
+    font-size: 36px !important;
+    line-height: 48px !important;
+  }
+
+  .address-content > div:last-child > div:nth-child(2){
+    margin-right: 0px !important;
+  }
+}
+@media only screen and (max-width: 768px){
+
+  //CONTACT PAGE
+  .contact-hero{
+    padding: 0 15px;
+
+
+    h1{
+      font-size: 22px !important;
+    }
+  }
+
+
+  .left-1{
+    font-size: 36px !important;
+    line-height: 48px !important;
+  }
+
+  .contact-answers{
+    flex-direction: column !important;
+
+    .answer-left{
+      order: 2 !important;
+      width: 100% !important;
+    }
+    .answer-right{
+      width: 100% !important;
+    }
+  }
+
+
+  .address-content{
+    flex-direction: column !important;
+
+
+    > div:first-child{
+      align-items: center !important;
+
+      span{
+
+        font-size: 28px !important;
+
+      }
+      
+    }
+
+    > div:last-child{
+     
+
+
+      >div:last-child{
+        display: none !important;
+      }
+
+    }
+  }
+}
+//CONTACT PAGE ENDS//
+
+//ABOUT PAGE STARTS//
+
+@media only screen and (max-width: 1024px){
+  .about-hero{
+    padding: 0 15px;
+  }
+
+  .crazy-text{
+    gap: 30px !important;
+    flex-direction: column !important;
+
+    .crazy-text-left{
+      width: 100% !important;
+
+      >div:first-child{
+        line-height: 38px !important;
+        font-size: 28px !important;
+      }
+    }
+    .crazy-text-right{
+      width: 100% !important;
+    }
+  }
+  .crazy-title{
+    font-size: 32px !important;
+    line-height: 42px !important;
+  }
+
+  .crazy-text-right > div > div:first-child{
+    line-height: 30px !important;
+    font-size: 20px !important;
+
+  }
+
+ .last{
+  display: none !important;
+
+ }
+
+}
+
+
+//ABOUT PAGE ENDS//
+
+
+
+
+
 
 
