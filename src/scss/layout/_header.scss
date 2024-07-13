@@ -24,10 +24,7 @@ header{
             margin-left: auto;
 
 
-            @media (max-width: 736px) {
-                width: 652px !important;
-             
-            }
+       
 
             .header-container-inner{
                 height: 90px;
@@ -40,9 +37,8 @@ header{
                 flex-wrap: nowrap;
                 justify-content: space-between;
 
-                @media (max-width: 1024px) {
-                    height: 60px;
-                  }
+             
+                
 
 
                 .header-left{
@@ -67,9 +63,8 @@ header{
                             list-style: none;
                             gap: 20px;
 
-                            @media (max-width: 1024px) {
-                                display: none;
-                              }
+                          
+
 
                             > li:first-child{
                                 position: relative;
@@ -105,9 +100,7 @@ header{
                         .mobile-left{
                             display: none;
 
-                            @media (max-width: 1024px) {
-                                display: block;
-                              }
+                        
                             
 
                             > a{
@@ -160,10 +153,7 @@ header{
 
                     >div:first-child{
                         color: v.$nav-color;
-                        @media (max-width: 1024px) {
-                            display: none;
-                          }
-
+                    
                         >a {
                             @include m.putCenterFlex();
                             height: 40px;
@@ -184,9 +174,7 @@ header{
                     }
                     >div:nth-child(2){
                         color: v.$nav-color;
-                        @media (max-width: 1024px) {
-                            display: none;
-                          }
+                    
 
                         >a {
                             @include m.putCenterFlex();
@@ -206,9 +194,7 @@ header{
                     }
                     >div:nth-child(3){
                         color: v.$nav-color;
-                        @media (max-width: 1024px) {
-                            display: none;
-                          }
+                     
 
                         >a {
                             @include m.putCenterFlex();
@@ -257,9 +243,7 @@ header{
                                 font-weight: 600;
                                 font-size: 16px;
                                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                                @media (max-width: 1024px) {
-                                    display: none;
-                                  }
+                              
                             }
                         }
                     }
