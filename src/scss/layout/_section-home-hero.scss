@@ -2,9 +2,8 @@
 @use '../utils/mixins' as m;
 
 .hero{
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     display: flex;
-    height: 580px;
     border-bottom:  2px solid #5E6821;
 
     .hero-left{
@@ -81,7 +80,7 @@
     }
     .swiper {
 
-       
+       margin-right: 0px !important;
         max-width: 1035px;
         max-height: 580px;
         padding-left: 40px;
