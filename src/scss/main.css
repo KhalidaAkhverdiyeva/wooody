@@ -601,20 +601,45 @@
     display: none;
   }
   .hero {
-    padding: 0px 15px;
+    padding: 0px 15px !important;
+    display: flex;
+    flex-wrap: nowrap !important;
+  }
+  .left-inner {
+    margin-right: 0px !important;
+    margin-top: 0px !important;
   }
   .mega-nav {
     padding: 0 !important;
   }
+  .bySize {
+    padding: 0px 15px !important;
+  }
+  .video-wrapper > div:first-child {
+    flex: 0 0 50% !important;
+    max-width: calc(50% - 20px) !important;
+  }
+  .video-wrapper > div:nth-child(2) {
+    flex: 0 0 50% !important;
+    max-width: calc(50% - 20px) !important;
+  }
+  .video-wrapper > div:last-child {
+    display: none;
+  }
 }
 @media only screen and (max-width: 990px) {
-  .hero .hero-left {
+  .hero .hero-left-wrapper {
+    display: none !important;
+    border-right: 0px !important;
+  }
+  .hero .hero-left-wrapper .hero-left {
     display: none !important;
   }
   .hero .hero-right {
     width: 100% !important;
     padding-left: 0 !important;
     border-left: 0px !important;
+    margin-left: 0px !important;
   }
   .hero .slide-text {
     bottom: 40px !important;
@@ -635,6 +660,27 @@
     justify-content: flex-start !important;
     align-items: flex-start !important;
     font-size: 14px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .video-wrapper > div video {
+    height: 460px !important;
+  }
+  .video-wrapper > div .overlay {
+    position: absolute;
+    bottom: 0 !important;
+    height: 460px !important;
+  }
+  .video-wrapper > div .overlay .overlay-content {
+    position: absolute;
+    bottom: 0 !important;
+  }
+  .video-wrapper > div:first-child {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+  .video-wrapper > div:nth-child(2) {
+    display: none !important;
   }
 }
 body {
@@ -1007,19 +1053,24 @@ footer .container .footer-slim > div:first-child p strong {
   padding-bottom: 50px;
   display: flex;
   border-bottom: 2px solid #5E6821;
+  justify-content: space-between;
 }
-.hero .hero-left {
+.hero .hero-left-wrapper {
+  border-right: #5e6821 solid 2px;
+  width: 26%;
+  height: 580px;
+}
+.hero .hero-left-wrapper .hero-left {
   display: flex;
   align-items: center;
   border-right-width: 2px !important;
   padding-top: 0px !important;
-  width: 30%;
 }
-.hero .hero-left .left-inner {
+.hero .hero-left-wrapper .hero-left .left-inner {
   margin-right: 70px;
   margin-top: 80px;
 }
-.hero .hero-left .left-inner .mega-nav {
+.hero .hero-left-wrapper .hero-left .left-inner .mega-nav {
   flex-grow: 1;
   margin-right: 8px;
   display: flex;
@@ -1029,19 +1080,19 @@ footer .container .footer-slim > div:first-child p strong {
   padding-right: 15px;
   width: 100%;
 }
-.hero .hero-left .left-inner .mega-nav ul {
+.hero .hero-left-wrapper .hero-left .left-inner .mega-nav ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.hero .hero-left .left-inner .mega-nav ul li {
+.hero .hero-left-wrapper .hero-left .left-inner .mega-nav ul li {
   display: flex;
   flex: 1 1 100%;
   max-width: 100%;
   width: 100%;
 }
-.hero .hero-left .left-inner .mega-nav ul li a {
+.hero .hero-left-wrapper .hero-left .left-inner .mega-nav ul li a {
   text-decoration: none;
   font-size: 38px;
   line-height: 1.7em;
@@ -1051,21 +1102,19 @@ footer .container .footer-slim > div:first-child p strong {
   align-items: center;
   flex-direction: row;
 }
-.hero .hero-left .left-inner .mega-nav ul li a img {
+.hero .hero-left-wrapper .hero-left .left-inner .mega-nav ul li a img {
   max-height: 18px;
   order: 1;
   margin-inline-start: 7px;
 }
-.hero .hero-left .left-inner .mega-nav ul li a span {
+.hero .hero-left-wrapper .hero-left .left-inner .mega-nav ul li a span {
   font-weight: 500;
 }
 .hero .swiper {
   margin-right: 0px;
   width: 70%;
   max-height: 580px;
-  padding-left: 40px;
   cursor: pointer;
-  border-left: #5e6821 solid 2px;
 }
 .hero .swiper-slide {
   font-size: 18px;
@@ -1112,6 +1161,7 @@ footer .container .footer-slim > div:first-child p strong {
 }
 .hero .swiper-slide .slide-text .star-text .green-btn {
   padding: 5px 20px;
+  width: 150px;
   min-height: 42px;
   font-size: 13px;
   position: relative;
@@ -1222,16 +1272,6 @@ footer .container .footer-slim > div:first-child p strong {
   border-bottom: solid 1px rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-size: 13px;
-}
-@media (max-width: 736px) {
-  .bySize .animated-video .video-wrapper > div:nth-child(2) {
-    display: none !important;
-  }
-}
-@media (max-width: 736px) {
-  .bySize .animated-video .video-wrapper > div:nth-child(3) {
-    display: none !important;
-  }
 }
 
 .insta {

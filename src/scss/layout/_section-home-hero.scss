@@ -5,84 +5,87 @@
     padding-bottom: 50px;
     display: flex;
     border-bottom:  2px solid #5E6821;
+    justify-content: space-between;
 
-    .hero-left{
-        display: flex;
-        align-items: center;
-        border-right-width: 2px !important;
-        padding-top: 0px !important;
-       width: 30%;
+    .hero-left-wrapper{
+        border-right: #5e6821 solid 2px ;
+        width: 26%;
+        height: 580px;
 
-      
-
-
-       
-        .left-inner{
-            margin-right: 70px;
-            margin-top: 80px;
-
-
-            .mega-nav{
-                flex-grow: 1;
-                margin-right: 8px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center !important;
-                padding-left: 15px;
-                padding-right: 15px;
-                width: 100%;
-                ul{
-                    list-style: none;
+        .hero-left{
+            display: flex;
+            align-items: center;
+            border-right-width: 2px !important;
+            padding-top: 0px !important;
+          
+            .left-inner{
+                margin-right: 70px;
+                margin-top: 80px;
+    
+    
+                .mega-nav{
+                    flex-grow: 1;
+                    margin-right: 8px;
                     display: flex;
                     flex-direction: column;
-                    gap: 20px;
-
-                    li{
+                    justify-content: center !important;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    width: 100%;
+                    ul{
+                        list-style: none;
                         display: flex;
-                        flex: 1 1 100%;
-                        max-width: 100%;
-                        width: 100%;
-                        
-
-                        a{
-                            text-decoration: none;
-                            font-size: 38px;
-                            line-height: 1.7em;
-                            font-weight: 300;
-                            color: v.$nav-color;
+                        flex-direction: column;
+                        gap: 20px;
+    
+                        li{
                             display: flex;
-                            align-items: center;
-                            flex-direction: row;
-
-
-                            img{
-                                max-height: 18px;
-                                order: 1;
-                                margin-inline-start: 7px;
+                            flex: 1 1 100%;
+                            max-width: 100%;
+                            width: 100%;
+                            
+    
+                            a{
+                                text-decoration: none;
+                                font-size: 38px;
+                                line-height: 1.7em;
+                                font-weight: 300;
+                                color: v.$nav-color;
+                                display: flex;
+                                align-items: center;
+                                flex-direction: row;
+    
+    
+                                img{
+                                    max-height: 18px;
+                                    order: 1;
+                                    margin-inline-start: 7px;
+                                }
+    
+                                span{
+                                    font-weight: 500;
+                                }
                             }
-
-                            span{
-                                font-weight: 500;
-                            }
+    
+                           
+    
                         }
-
-                       
-
                     }
                 }
             }
+    
+           
         }
-
-       
     }
+
+   
     .swiper {
 
        margin-right: 0px;
         width: 70%;
         max-height: 580px;
-        padding-left: 40px;
         cursor: pointer;
-        border-left: #5e6821 solid 2px ;
+      
        
     }
   
@@ -144,6 +147,7 @@
 
                 .green-btn{
                     padding: 5px 20px;
+                    width: 150px;
                     min-height: v.$button-heigt;
                     font-size: 13px;
                     position: relative;
