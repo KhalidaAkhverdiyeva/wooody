@@ -781,12 +781,14 @@
 }
 body {
   background-color: rgb(246, 243, 237);
+  scroll-behavior: smooth;
 }
 
 header {
   margin-bottom: 40px;
   top: 0;
   z-index: 1000;
+  transition: top 0.3s ease-in-out;
 }
 header .main-header {
   background-color: rgb(246, 243, 237);
@@ -976,6 +978,33 @@ header .main-header .header-container .header-container-inner .header-right > di
   font-weight: 600;
   font-size: 16px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: -50px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 50;
+  transition: right 0.3s ease-in-out;
+}
+
+.scroll-to-top i {
+  font-size: 20px;
+  color: #7c7a7a;
+  z-index: 50;
+}
+
+.show-scroll-to-top {
+  right: 30px;
 }
 
 footer {
