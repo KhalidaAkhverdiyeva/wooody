@@ -7,10 +7,11 @@ body{
 
 }
 header{
-    margin-bottom: 40px;
+    position: sticky;
     top: 0;
     z-index: 1000;
     transition: top 0.3s ease-in-out;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   
     .main-header{
         background-color: rgba(246, 243, 237, 1);
@@ -23,9 +24,6 @@ header{
 
             .header-container-inner{
                 height: 90px;
-                border-color: v.$green-border-color;
-                border-bottom-width: 2px;
-                border-bottom-style: solid;
 
                 @include m.putCenterFlex();
                 flex-direction: row;
@@ -265,7 +263,7 @@ header{
     font-size: 20px;
     color: #7c7a7a;
     z-index: 50;
-    
+
   }
   
   .show-scroll-to-top {

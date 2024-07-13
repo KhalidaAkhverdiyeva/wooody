@@ -785,10 +785,11 @@ body {
 }
 
 header {
-  margin-bottom: 40px;
+  position: sticky;
   top: 0;
   z-index: 1000;
   transition: top 0.3s ease-in-out;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 header .main-header {
   background-color: rgb(246, 243, 237);
@@ -801,9 +802,6 @@ header .main-header .header-container {
 }
 header .main-header .header-container .header-container-inner {
   height: 90px;
-  border-color: rgb(94, 104, 33);
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1179,6 +1177,8 @@ footer .container .footer-slim > div:first-child p strong {
   display: flex;
   border-bottom: 2px solid #5E6821;
   justify-content: space-between;
+  border-top: solid 2px #5E6821;
+  padding-top: 40px;
 }
 .hero .hero-left-wrapper {
   border-right: #5e6821 solid 2px;
