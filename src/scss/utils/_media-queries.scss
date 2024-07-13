@@ -51,8 +51,8 @@
     padding: 0px 15px !important;
     display: flex;
     flex-wrap: nowrap !important ;
+    border-bottom-color: transparent !important ;
   }
-
   .left-inner{
   margin-right: 0px !important; 
   margin-top: 0px !important;
@@ -60,13 +60,10 @@
   .mega-nav{
     padding: 0 !important;
   }
-
    //HOME-SIZE RESPONSIVENES //
-
    .bySize{
     padding: 0px 15px !important;
    }
-
    .video-wrapper{
       >div:first-child{
         flex: 0 0 calc(100% / 2) !important;
@@ -80,17 +77,70 @@
         display: none;
       }
      }
+  //HOME-OVERLAP-GREEN RESPONSIVENES //
+  .overlap-green{
+    padding-top: 30px !important;
 
+
+    .green-text{
+      font-size: 36px !important;
+    }
+
+  }
+    //HOME-OVERLAP-WHITE RESPONSIVENES //
+    .overlap-white{
+      padding: 0 15px !important;
+    }
+    //HOME-EXOTIC RESPONSIVENESS //
+    .exotic{
+      padding: 0px 15px !important;
+    }
+    .exotic-content {
+      width: 100% !important;
+      gap: 20px !important;
+
+      .flower {
+        flex: 1 1 calc(50% - 30px) !important;
+      }
+  }
+
+     //HOME-ARTICLE RESPONSIVENESS //
+
+     .article{
+
+      padding: 0 15px;
+     }
+     .article-right{
+      display: flex;
+      align-items: flex-start !important;
+      flex-direction: column !important;
+     }
+
+      //HOME-INSTA RESPONSIVENESS //
+
+      .insta-content{
+
+        >div:nth-child(6){
+          display: none !important;
+        }
+        >div:nth-child(5){
+          display: none !important;
+        }
+
+      }
+
+      .insta{
+        padding: 0 15px !important;
+      }
+
+
+      //FOOTER 
+
+      footer{
+        padding: 0 15px !important;
+      }
+      
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -163,6 +213,9 @@
 
 @media only screen and (max-width: 768px){
 
+
+  //HOME SIZE SECTION
+
   .video-wrapper{
 
     >div{
@@ -198,8 +251,102 @@
     
     }
 
+  //OVERLAP SECTION RESPONSIVENESS
+  .overlap-white{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0px !important;
+
+    .overlap-left{
+      width: 100% !important;
+      order: 2 !important;
+    }
+
+    .overlap-right{
+      height: 350px !important;
+    }
+
+  }
+
+  //HOME-ARTICLE RESPONSIVENESS //
+
+  .article-inside{
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .article-right{
+
+    >div:first-child{
+      h4{
+        font-size: 22px !important;
+      }
+    }
+  }
+
+  .article-inside{
+    display: flex;
+    align-items: flex-start !important;
+  }
+
+  //HOME-INSTA RESPONSIVENESS
+
+  .insta-content{
+
+    >div:nth-child(4){
+      display: none !important;
+    }
+    >div:nth-child(3){
+      display: none !important;
+    }
+
+  }
+
+  //FOOTER
+
+  .footer-big-right{
+    >div:last-child{
+      display: none !important;
+    }
+  }
+
+  .footer-big-content{
+    display: flex;
+    flex-direction: column !important;
 
 
+    .footer-big-left{
+      border-right: 0px  !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center;
+
+
+
+      >div{
+        text-align: center;
+      }
+
+      >div:nth-child(3){
+        form{
+          display: flex;
+          flex-wrap: nowrap !important;
+        }
+
+      }
+    }
+
+  }
+
+  .footer-slim{
+    flex-direction: column;
+    gap: 20px;
+
+
+    >div{
+      text-align: center;
+    }
+  }
 }
 
 
