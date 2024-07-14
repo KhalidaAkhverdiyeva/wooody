@@ -115,6 +115,19 @@
       align-items: flex-start !important;
       flex-direction: column !important;
      }
+     .b-article{
+
+      padding: 0 15px;
+     }
+     .b-article-right{
+      display: flex;
+      align-items: flex-start !important;
+      flex-direction: column !important;
+     }
+     .b-article-right > div:last-child{
+      flex-direction: row !important;
+     }
+
 
       //HOME-INSTA RESPONSIVENESS //
 
@@ -319,7 +332,25 @@
     }
   }
 
-  .article-inside{
+  .b-article-inside{
+    display: flex;
+    align-items: flex-start !important;
+  }
+  .b-article-inside{
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .b-article-right{
+
+    >div:first-child{
+      h4{
+        font-size: 22px !important;
+      }
+    }
+  }
+
+  .b-article-inside{
     display: flex;
     align-items: flex-start !important;
   }

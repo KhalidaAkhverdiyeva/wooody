@@ -1,0 +1,7 @@
+{
+    "article": [
+        { "id": 1, "title": "Hello World", "content": "This is my first post" },
+        { "id": 2, "title": "Learning API", "content": "APIs are great!" }
+
+    ]
+}
