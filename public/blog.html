@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -86,7 +92,7 @@
     <section class="b-article">
       <div class="b-article-title">
         <h4>Blog</h4>
-        <button>Add More</button>
+        <button class="openModal">Add More</button>
       </div>
       <div class="b-article-content">
         <!-- <div class="b-each-article">
@@ -215,6 +221,43 @@
       </div>
     </footer>
 
+    <div class="modal add-Modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Add More Article</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <input type="text" placeholder="Name" />
+              <input type="text " placeholder="Image" />
+              <input type="text" placeholder="Date" />
+              <input type="text" placeholder="Month" />
+              <input type="text" placeholder="Title" />
+              <input type="text" placeholder="Label" />
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary addArticle">
+              Add Article
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="../src/js/blog.js"></script>
   </body>
 </html>

@@ -222,3 +222,53 @@
 .b-each-article:hover .b-article-img {
     transform: scale(1.1);
   }
+
+
+.modal-header{
+  justify-content: space-between;
+
+  button{
+    border: none;
+    background: no-repeat;
+    span{
+      font-size: 40px;
+    }
+  }
+}
+
+.modal-body{
+
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+       input{
+        padding: 10px ;
+       }
+  }
+
+}
+
+.modal-footer{
+  button{
+    background-color: #457b9d;
+    border-radius: 0%;
+    border: none;
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+.add-Modal{
+  display: none; 
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1050; 
+  overflow: auto; 
+
+}
