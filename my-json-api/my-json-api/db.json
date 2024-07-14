@@ -1,7 +1,47 @@
 {
     "article": [
-        { "id": 1, "title": "Hello World", "content": "This is my first post" },
-        { "id": 2, "title": "Learning API", "content": "APIs are great!" }
+        { "id": 1,
+         "title": "Flower Arrangement Tips & Tricks from Floral Experts",
+         "dateNum": "11 ",
+         "dateMonth": "MAY",
+         "label": "DESIGN TIPS",
+         "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-1.jpg.webp"
+         },
+        { "id": 2,
+         "title": "How Often & How Much You Should Water Houseplants",
+         "dateNum": "30 ",
+         "dateMonth": "APR",
+         "label": "DESIGN TIPS, INTERVIEWS",
+         "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-2.jpg.webp"
+         },
+        { "id": 3,
+         "title": "Top 10 Tips and Tricks To Beat the Winter Blues",
+         "dateNum": "09 ",
+         "dateMonth": "APR",
+         "label": "COMMON CARE QUESTIONS",
+         "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-3.jpg.webp"
+         },
+        { "id": 4,
+         "title": "How to increase humidity for houseplants",
+         "dateNum": "05 ",
+         "dateMonth": "APR",
+         "label": "DESIGN TIPS",
+         "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-4.jpg.webp"
+         },
+        { "id": 5,
+         "title": "The benefits of houseplants",
+        "dateNum": "23 ",
+         "dateMonth": "MAR",
+         "label": "COMMON CARE QUESTIONS",
+         "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-5.jpg.webp"
+         },
+        { "id": 6,
+         "title": "What is biophilic design?",
+        "dateNum": "01 ",
+         "dateMonth": "MAR",
+         "label": "DESIGN TIPS",
+         "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-6.jpg.webp"
+         }
 
     ]
 }

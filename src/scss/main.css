@@ -212,7 +212,8 @@
   white-space: nowrap;
   border: none;
 }
-.b-article .b-article-content .b-each-article .b-each-article:hover .article-img {
+
+.b-each-article:hover .b-article-img {
   transform: scale(1.1);
 }
 

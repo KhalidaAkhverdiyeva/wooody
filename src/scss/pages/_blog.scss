@@ -215,9 +215,10 @@
           }
         }
   
-        .b-each-article:hover .article-img {
-          transform: scale(1.1);
-        }
+       
       }
     }
 }
+.b-each-article:hover .b-article-img {
+    transform: scale(1.1);
+  }
