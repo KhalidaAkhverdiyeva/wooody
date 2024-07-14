@@ -85,6 +85,7 @@
   overflow: hidden;
   flex: 0 0 320px;
   position: relative;
+  height: 213px;
 }
 .b-article .b-article-content .b-each-article .b-article-inside .b-article-left img {
   width: 100%;

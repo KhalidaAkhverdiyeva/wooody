@@ -1,47 +1,62 @@
 {
-    "article": [
-        { "id": 1,
-         "title": "Flower Arrangement Tips & Tricks from Floral Experts",
-         "dateNum": "11 ",
-         "dateMonth": "MAY",
-         "label": "DESIGN TIPS",
-         "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-1.jpg.webp"
-         },
-        { "id": 2,
-         "title": "How Often & How Much You Should Water Houseplants",
-         "dateNum": "30 ",
-         "dateMonth": "APR",
-         "label": "DESIGN TIPS, INTERVIEWS",
-         "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-2.jpg.webp"
-         },
-        { "id": 3,
-         "title": "Top 10 Tips and Tricks To Beat the Winter Blues",
-         "dateNum": "09 ",
-         "dateMonth": "APR",
-         "label": "COMMON CARE QUESTIONS",
-         "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-3.jpg.webp"
-         },
-        { "id": 4,
-         "title": "How to increase humidity for houseplants",
-         "dateNum": "05 ",
-         "dateMonth": "APR",
-         "label": "DESIGN TIPS",
-         "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-4.jpg.webp"
-         },
-        { "id": 5,
-         "title": "The benefits of houseplants",
-        "dateNum": "23 ",
-         "dateMonth": "MAR",
-         "label": "COMMON CARE QUESTIONS",
-         "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-5.jpg.webp"
-         },
-        { "id": 6,
-         "title": "What is biophilic design?",
-        "dateNum": "01 ",
-         "dateMonth": "MAR",
-         "label": "DESIGN TIPS",
-         "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-6.jpg.webp"
-         }
-
-    ]
+  "article": [
+    {
+      "title": "Flower Arrangement Tips & Tricks from Floral Experts",
+      "dateNum": "11 ",
+      "dateMonth": "MAY",
+      "label": "DESIGN TIPS",
+      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-1.jpg.webp"
+    },
+    {
+      "title": "How Often & How Much You Should Water Houseplants",
+      "dateNum": "30 ",
+      "dateMonth": "APR",
+      "label": "DESIGN TIPS, INTERVIEWS",
+      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-2.jpg.webp"
+    },
+    {
+      "title": "Top 10 Tips and Tricks To Beat the Winter Blues",
+      "dateNum": "09 ",
+      "dateMonth": "APR",
+      "label": "COMMON CARE QUESTIONS",
+      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-3.jpg.webp"
+    },
+    {
+      "title": "How to increase huor houseplants",
+      "dateNum": "05 ",
+      "dateMonth": "APR",
+      "label": "DESIGN TIPS",
+      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-4.jpg.webp"
+    },
+    {
+      "title": "The benefits of houseplants",
+      "dateNum": "23 ",
+      "dateMonth": "MAR",
+      "label": "COMMON CARE QUESTIONS",
+      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-5.jpg.webp"
+    },
+    {
+      "title": "What is biophilic design?",
+      "dateNum": "01 ",
+      "dateMonth": "MAR",
+      "label": "DESIGN TIPS",
+      "image": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-6.jpg.webp"
+    },
+    {
+      "id": "9714f835-0bbb-48f1-8a54-8272822078c1",
+      "title": "Why having a plan is a good thing",
+      "dateNum": "14",
+      "dateMonth": "Aug",
+      "label": "Decoration",
+      "image": "https://plus.unsplash.com/premium_photo-1681290358247-c160fc097bdb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGxhbnR8ZW58MHx8MHx8fDA%3D"
+    },
+    {
+      "id": "4424c283-c2dc-4f45-995f-2692eb9ef5a9",
+      "title": "How many flowers can you smell ?",
+      "dateNum": "23",
+      "dateMonth": "Apr",
+      "label": "PLANTOS",
+      "image": "https://images.unsplash.com/photo-1494516192674-b82b5f1e61dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHBsYW50fGVufDB8fDB8fHww"
+    }
+  ]
 }
