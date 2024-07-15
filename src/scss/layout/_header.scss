@@ -76,9 +76,22 @@ header{
                                        
                                     }
 
+
+                                    
+
+                                }
+
+                                &:hover {
+                                    .dropdown-menu {
+                                        display: block; 
+                                        opacity: 1; 
+                                        visibility: visible;
+                                    }
                                 }
                                 
+                                
                             }
+                            
                         }
 
                         .mobile-left{
@@ -267,27 +280,37 @@ header{
 
 .dropdown-menu {
     display: none;
-    padding: 0 15px;
+    padding: 15px;
     position: absolute;
-    top: 80px;
+    top: 40px;
     left: 0;
     width: 100%; 
-    background-color: #fff; 
+    padding: 15px 0px;
+   
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
     z-index: 1000; 
     height: 200px;
     justify-content: center;
     align-items: center;
-    z-index: 55;
+    z-index: 2005;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+
+
+
 
     .content{
+        padding: 25px 0px;
         margin: 0;
         display: flex;
         justify-content: center;
         gap: 50px;
         align-items: center;
+        background-color: #fff; 
+        margin-top: 35px;
+        padding: 25px;
 
         .contentItem {
+            
 
             img{
                 border-radius: 50%;
@@ -310,7 +333,12 @@ header{
     }
 }
 
-.shop:hover .dropdown-menu {
-    display: block;
-}
 
+
+
+.active {
+    color: red;
+    span{
+        color: red;
+    }
+}

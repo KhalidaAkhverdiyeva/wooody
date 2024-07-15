@@ -60,16 +60,57 @@
 
             .flower-content-wrapper{
                 display: flex;
+                flex: 1;
                 flex-direction: column;
                 gap: 10px;
+                position: relative;
+                overflow: hidden;
 
-                img{
+            .product-image{
+
+                position: relative;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                .img{
                     width: 100%;
-                    object-fit: contain;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                    transition: transform 0.5s ease, opacity 0.5s ease;
 
 
                 }
 
+                .main-image{
+                    width: 100%;
+                    height: 100%;
+                }
+                .zoom-image{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    object-fit: cover !important;
+                    opacity: 0;
+                    transform-origin: center center;
+                    transition: transform 5s, filter 3s ease-in-out;
+                    
+                    transform: scale(1);
+                }
+
+            }
+
+            .product-image:hover .zoom-image{
+                
+                transform: scale(2);
+                opacity: 1;
+            }
+            .product-image:hover .main-image{
+                opacity: 0;
+            }
+
+              
                 .colors{
                     display: flex;
                     justify-content: center;
