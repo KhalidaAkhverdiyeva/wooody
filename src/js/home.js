@@ -53,7 +53,3 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
-// const shoppage = document.querySelector('.shop')
-
-// shoppage.addEventListener('h')
