@@ -1,0 +1,13 @@
+{
+  "name": "woody-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "sass src/scss/main.scss public/css/main.css",
+    "watch:css": "sass --watch src/scss/main.scss public/css/main.css"
+  },
+  "dependencies": {
+    "sass": "^1.71.0"
+  }
+} 
